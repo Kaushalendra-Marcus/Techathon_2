@@ -1,0 +1,58 @@
+.first_half_bg {
+    background: rgba(159, 174, 179,0.7);
+    width: 260px;
+    height: 260px;
+    margin-top: 6%;
+    margin-left: 3%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: perspective(500px) rotateX(10deg); /* Adds a slight 3D tilt to the container */
+}
+
+.logo_image {
+    width: 240px;
+    height: 240px;
+    display: block;
+    margin: auto;
+    border: 6px solid rgba(255, 126, 95, 0.7);
+    border-radius: 50%;
+    box-shadow: 
+        0px 10px 20px rgba(0, 0, 0, 0.3), /* Outer shadow */
+        inset 0px -10px 20px rgba(0, 0, 0, 0.2); /* Inner shadow for depth */
+    transform: perspective(500px) rotateX(10deg) translateZ(20px); /* Adds 3D effect to the image */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Adds a drop shadow to the image */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.5)); /* Adds a gradient for a 3D effect */
+}
+
+.second_half_bg{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+
+}
+
+/* Custom Scrollbar Styling */
+.scrollbar-hide::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar-track {
+    background: transparent; /* Background of the scrollbar track */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar-thumb {
+    background: white; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+  }
+  
+  /* For Firefox */
+  .scrollbar-hide {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #444 transparent; /* Thumb and track color */
+  }
